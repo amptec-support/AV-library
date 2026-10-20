@@ -1,0 +1,60 @@
+manufacturer: Luminex
+model: GigaCore 10t 10G Neutrik opticalCON QUAD MMF
+slug: luminex-gigacore-10t-nqm-10g
+part_number: LU 01 00079-NQM-10G
+u_height: 1
+is_full_depth: false
+weight: 3.4
+weight_unit: kg
+comments: 'GigaCore 10t. 8 x 1GbE EtherCON (ports 1-4 front, 5-8 rear). 2 independent 10G fiber network interfaces,
+  Port 9 and Port 10 (front), each presented through its own Neutrik opticalCON QUAD MMF fixed rugged connector.
+  Connector shell format is not an additional network interface. The transceiver is internal, not a user-accessible
+  SFP cage or module bay. Non-PoE hardware. Dimensions 220 x 330 x 44 mm (W x D x H). Source: https://www.luminex.be/products/gigacore/gigacore-10t/.
+  NetBox does not validate mating types for Fiberfox/opticalCON cables.'
+interfaces:
+- name: Port 1
+  type: 1000base-t
+  label: '1'
+  description: Front EtherCON (RJ45-compatible); no PoE
+- name: Port 2
+  type: 1000base-t
+  label: '2'
+  description: Front EtherCON (RJ45-compatible); no PoE
+- name: Port 3
+  type: 1000base-t
+  label: '3'
+  description: Front EtherCON (RJ45-compatible); no PoE
+- name: Port 4
+  type: 1000base-t
+  label: '4'
+  description: Front EtherCON (RJ45-compatible); no PoE
+- name: Port 5
+  type: 1000base-t
+  label: '5'
+  description: Rear EtherCON (RJ45-compatible); no PoE
+- name: Port 6
+  type: 1000base-t
+  label: '6'
+  description: Rear EtherCON (RJ45-compatible); no PoE
+- name: Port 7
+  type: 1000base-t
+  label: '7'
+  description: Rear EtherCON (RJ45-compatible); no PoE
+- name: Port 8
+  type: 1000base-t
+  label: '8'
+  description: Rear EtherCON (RJ45-compatible); no PoE
+- name: Port 9
+  type: 10gbase-x-sfpp
+  label: '9'
+  description: 'Front Port 9: fixed Neutrik opticalCON QUAD MMF external connector; internal 10G optical transceiver;
+    one duplex link (TX/RX)'
+- name: Port 10
+  type: 10gbase-x-sfpp
+  label: '10'
+  description: 'Front Port 10: fixed Neutrik opticalCON QUAD MMF external connector; internal 10G optical transceiver;
+    one duplex link (TX/RX)'
+power-ports:
+- name: AC Input
+  type: neutrik-powercon-true1
+  maximum_draw: 30
