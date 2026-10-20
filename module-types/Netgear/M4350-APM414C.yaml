@@ -1,0 +1,16 @@
+manufacturer: Netgear
+model: M4350 APM414C 4x10G RJ45
+part_number: APM414C
+interfaces:
+- name: Port I1
+  type: 10gbase-t
+  description: Front RJ45
+- name: Port I2
+  type: 10gbase-t
+  description: Front RJ45
+- name: Port I3
+  type: 10gbase-t
+  description: Front RJ45
+- name: Port I4
+  type: 10gbase-t
+  description: Front RJ45

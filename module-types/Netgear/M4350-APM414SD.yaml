@@ -1,0 +1,16 @@
+manufacturer: Netgear
+model: M4350 APM414SD 4x10G/25G opticalCON QUAD MMF
+part_number: APM414SD
+interfaces:
+- name: Port I1
+  type: 25gbase-x-sfp28
+  description: Front opticalCON QUAD MMF (connector 1)
+- name: Port I2
+  type: 25gbase-x-sfp28
+  description: Front opticalCON QUAD MMF (connector 1)
+- name: Port I3
+  type: 25gbase-x-sfp28
+  description: Front opticalCON QUAD MMF (connector 2)
+- name: Port I4
+  type: 25gbase-x-sfp28
+  description: Front opticalCON QUAD MMF (connector 2)
