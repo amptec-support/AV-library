@@ -1,0 +1,61 @@
+manufacturer: Luminex
+model: LumiNode 12
+slug: luminex-luminode-12
+part_number: LU 01 00072
+u_height: 1
+is_full_depth: false
+weight: 1.96
+weight_unit: kg
+interfaces:
+- name: Ethernet 1
+  type: 1000base-t
+  description: Front EtherCON
+- name: Ethernet 2
+  type: 1000base-t
+  description: Rear EtherCON
+  poe_mode: pd
+  poe_type: type1-ieee802.3af
+- name: DMX 1
+  type: other
+  description: XLR5 Female
+- name: DMX 2
+  type: other
+  description: XLR5 Female
+- name: DMX 3
+  type: other
+  description: XLR5 Female
+- name: DMX 4
+  type: other
+  description: XLR5 Female
+- name: DMX 5
+  type: other
+  description: XLR5 Female
+- name: DMX 6
+  type: other
+  description: XLR5 Female
+- name: DMX 7
+  type: other
+  description: XLR5 Female
+- name: DMX 8
+  type: other
+  description: XLR5 Female
+- name: DMX 9
+  type: other
+  description: XLR5 Female
+- name: DMX 10
+  type: other
+  description: XLR5 Female
+- name: DMX 11
+  type: other
+  description: XLR5 Female
+- name: DMX 12
+  type: other
+  description: XLR5 Female
+power-ports:
+- name: Power In
+  type: neutrik-powercon-true1
+  maximum_draw: 13
+power-outlets:
+- name: Power Out
+  type: neutrik-powercon-true1
+  power_port: Power In
