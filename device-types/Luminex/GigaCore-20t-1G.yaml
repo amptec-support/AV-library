@@ -53,9 +53,11 @@ interfaces:
 - name: '20'
   type: 1000base-x-sfp
 power-ports:
-- name: AC IN
-  type: neutrik-powercon-true1
-  maximum_draw: 30
+  - name: Power In
+    type: neutrik-powercon-true1
+    maximum_draw: 30
+
 power-outlets:
-- name: AC OUT
-  type: neutrik-powercon-true1
+  - name: Power Out
+    type: neutrik-powercon-true1
+    power_port: Power In
