@@ -1,4 +1,4 @@
-# DRAFT — physical port numbering and AC outlet connector direction must be validated on hardware.
+# Amptec AV-library — Luminex device type
 manufacturer: Luminex
 model: GigaCore 20t 10G-P500
 slug: luminex-gigacore-20t-10g-p500
@@ -14,36 +14,68 @@ comments: '20-port AV switch. 8 EtherCON copper (4 front, 4 rear), 8 RJ45 copper
 interfaces:
 - name: '1'
   type: 1000base-t
+  poe_mode: pse
+  poe_type: type4-ieee802.3bt
 - name: '2'
   type: 1000base-t
+  poe_mode: pse
+  poe_type: type4-ieee802.3bt
 - name: '3'
   type: 1000base-t
+  poe_mode: pse
+  poe_type: type4-ieee802.3bt
 - name: '4'
   type: 1000base-t
+  poe_mode: pse
+  poe_type: type4-ieee802.3bt
 - name: '5'
   type: 1000base-t
+  poe_mode: pse
+  poe_type: type4-ieee802.3bt
 - name: '6'
   type: 1000base-t
+  poe_mode: pse
+  poe_type: type4-ieee802.3bt
 - name: '7'
   type: 1000base-t
+  poe_mode: pse
+  poe_type: type4-ieee802.3bt
 - name: '8'
   type: 1000base-t
+  poe_mode: pse
+  poe_type: type4-ieee802.3bt
 - name: '9'
   type: 1000base-t
+  poe_mode: pse
+  poe_type: type4-ieee802.3bt
 - name: '10'
   type: 1000base-t
+  poe_mode: pse
+  poe_type: type4-ieee802.3bt
 - name: '11'
   type: 1000base-t
+  poe_mode: pse
+  poe_type: type4-ieee802.3bt
 - name: '12'
   type: 1000base-t
+  poe_mode: pse
+  poe_type: type4-ieee802.3bt
 - name: '13'
   type: 1000base-t
+  poe_mode: pse
+  poe_type: type4-ieee802.3bt
 - name: '14'
   type: 1000base-t
+  poe_mode: pse
+  poe_type: type4-ieee802.3bt
 - name: '15'
   type: 1000base-t
+  poe_mode: pse
+  poe_type: type4-ieee802.3bt
 - name: '16'
   type: 1000base-t
+  poe_mode: pse
+  poe_type: type4-ieee802.3bt
 - name: '17'
   type: 10gbase-x-sfpp
 - name: '18'

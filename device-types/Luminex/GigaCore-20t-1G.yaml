@@ -1,4 +1,4 @@
-# DRAFT — physical port numbering and AC outlet connector direction must be validated on hardware.
+# Amptec AV-library — Luminex device type
 manufacturer: Luminex
 model: GigaCore 20t 1G
 slug: luminex-gigacore-20t-1g

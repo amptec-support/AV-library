@@ -1,3 +1,4 @@
+# Amptec AV-library — Luminex device type
 manufacturer: Luminex
 model: GigaCore 10t 1G Neutrik opticalCON QUAD MMF
 slug: luminex-gigacore-10t-nqm-1g
@@ -15,35 +16,35 @@ interfaces:
 - name: Port 1
   type: 1000base-t
   label: '1'
-  description: Front EtherCON (RJ45-compatible); no PoE
+  description: Front EtherCON
 - name: Port 2
   type: 1000base-t
   label: '2'
-  description: Front EtherCON (RJ45-compatible); no PoE
+  description: Front EtherCON
 - name: Port 3
   type: 1000base-t
   label: '3'
-  description: Front EtherCON (RJ45-compatible); no PoE
+  description: Front EtherCON
 - name: Port 4
   type: 1000base-t
   label: '4'
-  description: Front EtherCON (RJ45-compatible); no PoE
+  description: Front EtherCON
 - name: Port 5
   type: 1000base-t
   label: '5'
-  description: Rear EtherCON (RJ45-compatible); no PoE
+  description: Rear EtherCON
 - name: Port 6
   type: 1000base-t
   label: '6'
-  description: Rear EtherCON (RJ45-compatible); no PoE
+  description: Rear EtherCON
 - name: Port 7
   type: 1000base-t
   label: '7'
-  description: Rear EtherCON (RJ45-compatible); no PoE
+  description: Rear EtherCON
 - name: Port 8
   type: 1000base-t
   label: '8'
-  description: Rear EtherCON (RJ45-compatible); no PoE
+  description: Rear EtherCON
 - name: Port 9
   type: 1000base-x-sfp
   label: '9'

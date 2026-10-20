@@ -1,3 +1,4 @@
+# Amptec AV-library — Luminex device type
 manufacturer: Luminex
 model: GigaCore 10t 1G EtherCON-only
 slug: luminex-gigacore-10t-1g
@@ -6,42 +7,42 @@ u_height: 1
 is_full_depth: false
 weight: 3.4
 weight_unit: kg
-comments: 'GigaCore 10t. 8 x 1GbE EtherCON (ports 1-4 front, 5-8 rear). No optical connectors factory-fitted.
-  Non-PoE hardware. Dimensions 220 x 330 x 44 mm (W x D x H). Source: https://www.luminex.be/products/gigacore/gigacore-10t/.
+comments: 'GigaCore 10t. 8 x 1GbE EtherCON (ports 1-4 front, 5-8 rear). No optical connectors factory-fitted. Non-PoE
+  hardware. Dimensions 220 x 330 x 44 mm (W x D x H). Source: https://www.luminex.be/products/gigacore/gigacore-10t/.
   NetBox does not validate mating types for Fiberfox/opticalCON cables.'
 interfaces:
 - name: Port 1
   type: 1000base-t
   label: '1'
-  description: Front EtherCON (RJ45-compatible); no PoE
+  description: Front EtherCON
 - name: Port 2
   type: 1000base-t
   label: '2'
-  description: Front EtherCON (RJ45-compatible); no PoE
+  description: Front EtherCON
 - name: Port 3
   type: 1000base-t
   label: '3'
-  description: Front EtherCON (RJ45-compatible); no PoE
+  description: Front EtherCON
 - name: Port 4
   type: 1000base-t
   label: '4'
-  description: Front EtherCON (RJ45-compatible); no PoE
+  description: Front EtherCON
 - name: Port 5
   type: 1000base-t
   label: '5'
-  description: Rear EtherCON (RJ45-compatible); no PoE
+  description: Rear EtherCON
 - name: Port 6
   type: 1000base-t
   label: '6'
-  description: Rear EtherCON (RJ45-compatible); no PoE
+  description: Rear EtherCON
 - name: Port 7
   type: 1000base-t
   label: '7'
-  description: Rear EtherCON (RJ45-compatible); no PoE
+  description: Rear EtherCON
 - name: Port 8
   type: 1000base-t
   label: '8'
-  description: Rear EtherCON (RJ45-compatible); no PoE
+  description: Rear EtherCON
 power-ports:
 - name: AC Input
   type: neutrik-powercon-true1
