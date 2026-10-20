@@ -1,0 +1,6 @@
+manufacturer: Netgear
+model: APS2000W
+part_number: APS2000W-100NES
+power-ports:
+- name: Power In {module}
+  type: iec-60320-c14

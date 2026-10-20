@@ -1,0 +1,6 @@
+manufacturer: Netgear
+model: APS1200Wv2
+part_number: APS1200W-200NES
+power-ports:
+- name: Power In {module}
+  type: iec-60320-c14

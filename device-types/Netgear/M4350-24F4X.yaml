@@ -78,35 +78,35 @@ interfaces:
   type: 2.5gbase-x-sfp
   description: Front SFP
 - name: Port 25 - RJ45
-  label: "25"
+  label: '25'
   type: 10gbase-t
   description: Combo with Port 25 - SFP+
 - name: Port 25 - SFP+
-  label: "25F"
+  label: 25F
   type: 10gbase-x-sfpp
   description: Combo with Port 25 - RJ45
 - name: Port 26 - RJ45
-  label: "26"
+  label: '26'
   type: 10gbase-t
   description: Combo with Port 26 - SFP+
 - name: Port 26 - SFP+
-  label: "26F"
+  label: 26F
   type: 10gbase-x-sfpp
   description: Combo with Port 26 - RJ45
 - name: Port 27 - RJ45
-  label: "27"
+  label: '27'
   type: 10gbase-t
   description: Combo with Port 27 - SFP+
 - name: Port 27 - SFP+
-  label: "27F"
+  label: 27F
   type: 10gbase-x-sfpp
   description: Combo with Port 27 - RJ45
 - name: Port 28 - RJ45
-  label: "28"
+  label: '28'
   type: 10gbase-t
   description: Combo with Port 28 - SFP+
 - name: Port 28 - SFP+
-  label: "28F"
+  label: 28F
   type: 10gbase-x-sfpp
   description: Combo with Port 28 - RJ45
 - name: OOB Management
@@ -118,6 +118,7 @@ power-ports:
 module-bays:
 - name: PSU 1
   position: '1'
+  description: 'Compatible: APS600Wv3, APS1200Wv2, APS2000Wv2'
 console-ports:
 - name: Console
   type: usb-c

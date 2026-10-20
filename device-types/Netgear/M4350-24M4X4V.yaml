@@ -166,8 +166,10 @@ power-ports:
 module-bays:
 - name: PSU 1
   position: '1'
+  description: 'Compatible: APS600Wv3, APS1200Wv2, APS2000Wv2'
 - name: PSU 2
   position: '2'
+  description: 'Compatible: APS600Wv3, APS1200Wv2, APS2000Wv2'
 console-ports:
 - name: Console
   type: usb-c

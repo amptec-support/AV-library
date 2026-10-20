@@ -146,6 +146,7 @@ power-ports:
 module-bays:
 - name: PSU 1
   position: '1'
+  description: 'Compatible: APS350W, APS600Wv2, APS920W, APS2000W'
 console-ports:
 - name: Console
   type: usb-c

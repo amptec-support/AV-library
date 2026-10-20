@@ -1,0 +1,6 @@
+manufacturer: Netgear
+model: APS600Wv3
+part_number: APS600W-300NES
+power-ports:
+- name: Power In {module}
+  type: iec-60320-c14
