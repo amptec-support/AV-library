@@ -1,0 +1,49 @@
+manufacturer: Luminex
+model: GigaCore 10t 10G Fiberfox 2ch MMF
+slug: luminex-gigacore-10t-10g-fiberfox-2ch-mmf
+part_number: LU 01 00079-F2M-10G
+u_height: 1
+is_full_depth: false
+comments: >-
+  Non-PoE GigaCore 10t factory optical configuration: 8x 1GbE EtherCON
+  (4 front, 4 rear) and 2x 1G/10G multimode optical interfaces presented
+  via a rugged Fiberfox 2-channel connector. The optical transceivers are
+  internal and are not modeled as user-accessible SFP module bays. NetBox's
+  interface type identifies the 10G optical port capability; it does not
+  enforce the external Fiberfox connector mating format.
+  Sources: https://www.luminex.be/products/gigacore/gigacore-10t/
+  and https://support.luminex.be/portal/en/kb/articles/sfp-modules
+power-ports:
+  - name: AC Input
+    type: powercon-true1
+interfaces:
+  - name: Port 1
+    type: 1000base-t
+    description: Front EtherCON
+  - name: Port 2
+    type: 1000base-t
+    description: Front EtherCON
+  - name: Port 3
+    type: 1000base-t
+    description: Front EtherCON
+  - name: Port 4
+    type: 1000base-t
+    description: Front EtherCON
+  - name: Port 5
+    type: 1000base-t
+    description: Rear EtherCON
+  - name: Port 6
+    type: 1000base-t
+    description: Rear EtherCON
+  - name: Port 7
+    type: 1000base-t
+    description: Rear EtherCON
+  - name: Port 8
+    type: 1000base-t
+    description: Rear EtherCON
+  - name: Port 9
+    type: 10gbase-x-sfpp
+    description: Internal dual-rate MMF SFP; external Fiberfox 2ch rugged connector, front; no exposed SFP cage
+  - name: Port 10
+    type: 10gbase-x-sfpp
+    description: Internal dual-rate MMF SFP; external Fiberfox 2ch rugged connector, front; no exposed SFP cage
