@@ -1,0 +1,16 @@
+---
+manufacturer: QSC
+model: Core 110f
+slug: qsc-core-110f
+u_height: 1
+is_full_depth: false
+description: Q-SYS Core 110f audio DSP and control processor
+comments: 'Sources: https://help.qsys.com/q-sys_9.4/Content/Hardware/Processing/Core_110f.htm
+  and https://www.qscaudio.com/resource-files/productresources/dn/dsp_cores/core_110f/q_dn_core_110f_appguide_pots.pdf
+  . Two fixed 1G ports; 8 input/8 output/8 flex analog audio channels are documented
+  but omitted from Ethernet components.'
+interfaces:
+- name: LAN A
+  type: 1000base-t
+- name: LAN B
+  type: 1000base-t

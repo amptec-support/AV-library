@@ -1,0 +1,15 @@
+---
+manufacturer: d&b audiotechnik
+model: D80
+slug: d-b-audiotechnik-d80
+u_height: 2
+is_full_depth: true
+description: 4-channel touring amplifier
+comments: 'Source: https://www.dbaudio.com/global/en/products/amplifiers/d80/ . Physical
+  audio and loudspeaker connectors documented by manufacturer but not represented
+  as Ethernet interfaces.'
+interfaces:
+- name: Ethernet 1
+  type: 100base-tx
+- name: Ethernet 2
+  type: 100base-tx

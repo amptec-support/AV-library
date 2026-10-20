@@ -1,0 +1,28 @@
+---
+manufacturer: DirectOut
+model: PRODIGY.MP
+slug: directout-prodigy-mp
+u_height: 0
+is_full_depth: false
+description: Modular audio processor - chassis model only (rack size to verify)
+comments: 'REVIEW REQUIRED: u_height: 0 is a deliberate placeholder for chassis height,
+  NOT a verified rack dimension. Set actual size before rack deployment. Slots A1-A2,
+  B1-B2, C1-C4 confirmed by https://www.directout.eu/product/prodigy-mp/ . Modular
+  network/audio interfaces depend on installed cards; do not assume them.'
+module-bays:
+- name: A1
+  position: A1
+- name: A2
+  position: A2
+- name: B1
+  position: B1
+- name: B2
+  position: B2
+- name: C1
+  position: C1
+- name: C2
+  position: C2
+- name: C3
+  position: C3
+- name: C4
+  position: C4
