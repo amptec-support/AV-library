@@ -22,7 +22,7 @@ A future NetBox–Zabbix integration is envisaged, but **is not part of the curr
 ## 2. Scope and principles
 
 - Include professional AV equipment from all relevant manufacturers, **including discontinued products**.
-- Build the library **manufacturer by manufacturer**, then **series by series**. Luminex is the first focus.
+- Build the library **manufacturer by manufacturer**, then **series by series**. Luminex and NETGEAR M4350 are the first families; apply the same standards to every future manufacturer.
 - Research the complete product family and its manufacturer-confirmed SKUs before generating YAML.
 - Create **separate Device Types for meaningfully distinct fixed physical hardware variants**, notably different fixed external optical connector formats, PoE/non-PoE hardware, different power hardware and different physical port arrangements.
 - Do **not** create new Device Types solely for firmware, licenses, customer settings or **user-replaceable transceivers**.
@@ -42,7 +42,9 @@ AV-library/
 │   └── ...
 ├── module-types/
 │   ├── Luminex/
+│   ├── Netgear/
 │   └── ...
+├── scripts/                      # Optional maintained NetBox utility scripts
 └── research/
     └── Luminex/
         ├── inventory.csv
@@ -72,13 +74,13 @@ AV-library/
 | `device-bays` | Bays accommodating separate complete devices | Supported chassis/subdevice arrangements |
 | `inventory-items` | Appropriate non-module physical components | Certain accessories or non-modular spare parts |
 
-Do not invent Front/Rear Ports to represent the front/rear location of an active interface. Do not fake DMX, audio or video connectors as Ethernet interfaces. Where native NetBox fields cannot faithfully represent an AV connector, document the limitation and decide a consistent approach before publishing.
+Do not invent Front/Rear Ports to represent the front/rear location of an active interface. **Agreed AV exception:** to document the physical DMX cable path in the current NetBox deployment, LumiNode XLR5 and RJ45 DMX connectors may be represented as `interfaces` with `type: other`. These are **not Ethernet** and must not be mistaken for SNMP-monitored network ports. Record the signal/physical connector explicitly (e.g. `Front XLR5 Female`, `Rear RJ45 DMX`). Apply this pattern to other non-Ethernet AV connections only after verifying that native NetBox components do not model the intended cable path more faithfully.
 
 ## 5. Interface naming and descriptions
 
 - Prefer the **actual port numbering printed on the hardware** (`Port 1`, `Port 9`, etc.) where confirmed.
 - Record actual network medium/speed in the `type` field and use `poe_mode` and `poe_type` where applicable.
-- Descriptions must be **short, factual and non-redundant**: physical side, external connector family and relevant optical medium only when not represented elsewhere.
+- Descriptions must be **short, factual and non-redundant**: **`Front` or `Rear`** (do not alternate with `Back`), external connector family and relevant optical medium only when not represented elsewhere. **Populate `description` on every interface/interface template, including module interfaces.**
 - Do not repeat port numbers, RJ45 compatibility of EtherCON, generic SFP explanations, link duplex/TX/RX facts, or the number of fibers normally used by a duplex link.
 - Do not put PoE capability in `description` when it can be represented by the dedicated PoE fields.
 
@@ -87,7 +89,11 @@ Examples of acceptable descriptions:
 | Component | `description` |
 | --- | --- |
 | Front copper interface | `Front EtherCON` |
-| Rear copper interface | `Rear EtherCON` |
+| Rear copper interface | `Rear EtherCON` or `Rear RJ45` as fitted |
+| Front SFP+ interface | `Front SFP+` |
+| Front SFP28 interface | `Front SFP28` |
+| APM414SD | `Front opticalCON QUAD MMF (connector 1)` |
+| DMX connector | `Front XLR5 Female` |
 | Fixed front optical connector | `Front Fiberfox 2ch MMF` |
 | Fixed front optical connector | `Front Fiberfox 4ch MMF` |
 | Fixed front optical connector | `Front Neutrik opticalCON DUO SMF` |
@@ -104,6 +110,26 @@ interfaces:
 ```
 
 This PoE example applies **only when the specific hardware supports IEEE 802.3bt Type 4**. Verify the standard per variant. Omit `poe_mode` and `poe_type` on non-PoE and non-PSE ports; do not blindly copy PoE settings onto optical ports.
+
+### Combo interfaces and unique names
+
+A **combo port** is one logical switch port exposed on **two different physical connectors** (e.g. RJ45 and SFP+). For physical cabling, describe both connectors as separate interface objects. They must have **different NetBox `name` values**, because NetBox requires unique interface names on a device. Keep the manufacturer's shared port number in the label or name and explicitly describe that the two interfaces are mutually exclusive. **NetBox will not enforce the combo-port exclusivity** for you. Do not accidentally count these as two independently usable switch links.
+
+Example of the agreed M4350-24F4X principle (exact numbering is illustrative; use actual hardware labels):
+
+```yaml
+interfaces:
+  - name: Port 25 - RJ45
+    label: '25'
+    type: 10gbase-t
+    description: Front RJ45 (combo with Port 25 - SFP+)
+  - name: Port 25 - SFP+
+    label: 25F
+    type: 10gbase-x-sfpp
+    description: Front SFP+ (combo with Port 25 - RJ45)
+```
+
+For **module interfaces**, `name` must likewise be unique relative to every other interface on the device. On the M4350-16M4V, the tested APM414-series naming is `Port I1`–`Port I4` rather than `Port 1`–`Port 4`, which would collide with fixed switch ports. Test by installing the module on an actual **test device**, not solely by inspecting its Module Type.
 
 ## 6. Fixed optical connectors and cabling
 
@@ -158,6 +184,41 @@ power-outlets:
 
 This is a **component-layout example**, not a complete replacement for any existing YAML. In particular, do not remove `maximum_draw` from an existing definition when copying these snippets. Record and verify the AC/DC redundancy behavior and supported power draw separately for each hardware variant. The external **RPSU 5580** should eventually have its own Device Type so that its connections can be documented.
 
+### Replaceable power supplies and interface modules
+
+A fixed connector/input on the chassis is a `power-port`; a **truly removable slide-in PSU** is a `module-type` installed in a `module-bay`. Different counts or combinations of replaceable PSUs **do not** justify separate chassis Device Types. The same applies to removable interface expansion cards. The device instance records which specific PSU or card is installed.
+
+- The installed PSU module should own its **actual AC power input**. For multiple PSU slots, use a module-bay position (e.g. `1`, `2`) and a templated input name such as `Power In {module}` to avoid duplicate power-port names after installation. Test the result with two populated bays.
+- External NETGEAR APS254W adapters for the **M4350-8M2V** are not chassis plug-in PSU modules; model the switch's DC inputs instead of inventing internal PSU bays.
+- The **M4350-16M4V** has fixed PowerCON inputs and a removable **APM414 interface expansion card**; do not miscategorize those PowerCON connectors as slide-in PSU modules. Confirm the precise PowerCON physical variant from manufacturer documentation before claiming it verified.
+- M4350 APM414 interface cards include **APM414V** (SFP28), **APM414C** (copper), **APM414SD** (MMF opticalCON QUAD) and **APM414LD** (SMF opticalCON QUAD). For SD/LD, distinguish **two physical QUAD connectors** from **four independent optical links**; map the exact port/connector relationship from official drawings where available.
+- NETGEAR M4350 PSU families have different hardware compatibilities. A shared manufacturer is **not proof** that a PSU fits a chassis. Use only manufacturer-confirmed combinations and document them in the relevant module-bay description/research.
+- The W number in an APS product name typically refers to PSU output rating, **not** necessarily the whole device's NetBox `maximum_draw` (AC input consumption). Verify connector types (including C14 versus C20) and input ratings individually.
+- Where NetBox **Module Bay Types** are supported, they can classify compatible bays/modules; check how the installed importer actually handles them. **Do not assume that merely adding a Bay Type or a description enforces every incompatibility**, especially for unclassified modules. Validate allowed and disallowed installations on a test device.
+
+#### Module Type YAML example
+
+```yaml
+manufacturer: Netgear
+model: M4350 APM414V 4x25G SFP28
+part_number: APM414V
+interfaces:
+  - name: Port I1
+    type: 25gbase-x-sfp28
+    description: Front SFP28
+  - name: Port I2
+    type: 25gbase-x-sfp28
+    description: Front SFP28
+  - name: Port I3
+    type: 25gbase-x-sfp28
+    description: Front SFP28
+  - name: Port I4
+    type: 25gbase-x-sfp28
+    description: Front SFP28
+```
+
+Every removable part belongs in `module-types/<Manufacturer>/`, not as an extra device type for each possible chassis/module combination.
+
 ## 8. Research, validation and quality gates
 
 Track each planned model or SKU in the research inventory using:
@@ -184,7 +245,9 @@ Preferred evidence:
 - Power draw fields preserved and independently reviewed for units and meaning.
 - No duplicate or unnecessarily verbose descriptions.
 - YAML syntax and NetBox field/choice compatibility checked.
-- Test **Load → Import → inspect component templates and a test device**. A successful import does not by itself prove the hardware definition is complete or correct.
+- Test **Load → Import → inspect component templates → create a test device → install modules → inspect resulting components**. A successful import does not by itself prove the hardware definition is complete or correct.
+- Confirm that `description` is present both on the **template** and (after the synchronization step below) on the **actual interface**. These are separate records.
+- Verify that module interfaces install without name collisions and that power-ports have unique names after multiple PSUs are fitted.
 
 For revisions, **compare old versus new**: never lose valid ports, PoE settings, `maximum_draw`, dimensions or part numbers inadvertently.
 
@@ -199,7 +262,8 @@ For revisions, **compare old versus new**: never lose valid ports, PoE settings,
 5. Commit directly to `master` during the setup phase.
 6. In NetBox, click **Load** to refresh the importer's catalogue, then **Import** the selected types.
 7. Inspect created NetBox component templates and test-device ports; correct YAML and repeat if necessary.
-8. Update verification status and research sources. Retire outdated drafts and avoid duplicate Device Types.
+8. Run the **interface description sync** (section 10) on the NetBox instance after new devices/modules are installed, first in dry-run mode.
+9. Update verification status and research sources. Retire outdated drafts and avoid duplicate Device Types.
 
 **Installed importer:** `netbox-device-module-type-importer` v0.0.3 with NetBox 4.7.3 during initial setup. The plugin contains **hard-coded `master` GitHub references**. Keep `master` available; review compatibility if upgrading the plugin/NetBox. It reads GitHub through GraphQL using the configured `repo_owner`, `repo` and a server-side credential.
 
@@ -210,7 +274,68 @@ For revisions, **compare old versus new**: never lose valid ports, PoE settings,
 - Updating a YAML in GitHub and clicking Load does **not guarantee that previously imported NetBox Device Types, interface templates, or existing device interfaces are updated**. Inspect the importer's update behavior and perform any required controlled corrections.
 - Back up NetBox data before destructive bulk operations. Keep GitHub tokens and credentials out of YAML, README files, commits, screenshots and shared terminal output; rotate accidentally exposed credentials immediately.
 
-## 10. Amptec user guide
+## 10. Interface descriptions: synchronization script (required operational step)
+
+**Observed on Amptec NetBox 4.7.3:** `InterfaceTemplate.description` is correctly loaded for both Device Types and Module Types, but an interface **created on an actual device** (including a removable module interface) **does not automatically inherit that description**. A correctly filled template does not guarantee a description on the device instance. Reinstalling a module does not solve this behavior.
+
+We have tested a local Python/Django script on the NetBox server at:
+
+```text
+/opt/netbox/sync_interface_descriptions.py
+```
+
+**What the script does:**
+
+1. Reads all Interface Templates with nonempty `description` values.
+2. Finds actual device interfaces where `description` is empty.
+3. For fixed interfaces, matches by the **device's Device Type + exact interface name**.
+4. For fitted module interfaces, matches by the **installed Module Type + exact interface name**.
+5. Copies the template description only when a match is found; **existing nonempty descriptions remain untouched**.
+6. Prints totals and sample changes. The current script is **manual**, not automatically triggered by new devices/modules.
+
+We verified the process in the current environment: the dry-run identified **21 interfaces**, all **21 matched**, and the subsequent apply operation populated their descriptions successfully. This confirms the mechanism on the tested hardware; it does not automatically validate future hardware YAML.
+
+### How to run (NetBox host `ampnetbox01`)
+
+**1. Dry-run — mandatory first**
+
+Ensure the script contains:
+
+```python
+APPLY = False
+```
+
+Execute:
+
+```bash
+cd /opt/netbox
+/opt/netbox/venv/bin/python netbox/manage.py shell \
+  < /opt/netbox/sync_interface_descriptions.py
+```
+
+Inspect `Interfaces checked`, `Already filled`, `Missing matching template`, `Descriptions to update` and the examples. `None` in the example's device-name column may mean the test device has no name; inspect the record if unexpectedly missing. **Do not proceed if unexpected components or descriptions appear.**
+
+**2. Apply — only after the preview is correct**
+
+Change the existing script temporarily to:
+
+```python
+APPLY = True
+```
+
+Then run the **same command**. The current implementation uses a database transaction for its writes and avoids overwriting any description that was populated when the script queried the interfaces. **Do not run simultaneous interface edits during apply**; obtain a backup appropriate to your change scope before mass updates.
+
+**3. Verify and reset**
+
+- Refresh the actual **Device → Interfaces** page in NetBox; inspect at least one built-in port and one installed module port.
+- Set `APPLY = False` again immediately after the successful run to prevent accidental writes on subsequent executions.
+- After importing definitions, **run the sync for any new devices/modules**; updates to a Device Type's YAML or template do not themselves update already deployed devices.
+
+**Scope/limitations:** the script matches **exact interface names** and only fills *empty* values. It does **not** change existing descriptions when the library standard changes, does not rename ports, and does not verify actual connector presence or enforce module compatibility. Keep manual exceptions on existing interfaces intact. If a template is missing or has a different name, inspect YAML and component templates; do not force a broad rename/update. A future approved automation (e.g. an event-driven NetBox integration) can eliminate the manual step, but **is not implemented today**.
+
+**Source control:** maintain a reviewed copy of the script in `scripts/` if it is to become a shared team tool. Currently the tested copy lives **on the NetBox host**, not automatically in GitHub; the README alone does not install it.
+
+## 11. Amptec user guide
 
 **Find a type:** search by manufacturer, model, SKU and connector variant. Marketing names can conceal significant physical differences.
 
@@ -222,13 +347,12 @@ For revisions, **compare old versus new**: never lose valid ports, PoE settings,
 
 **When using optical cables:** check the physical cable/connectors manually; the interface type alone does not guarantee Fiberfox/opticalCON compatibility.
 
-## 11. Planned rollout
+## 12. Planned rollout
 
-1. **Luminex:** first GigaCore 20t and 10t hardware variants; next **GigaCore 10i**, followed by other current/Gen2 switches.
-2. Add earlier GigaCore generations and discontinued products using archived documentation.
-3. Continue with **LumiNode**, **LumiCore**, **LumiSplit** and relevant Luminex power accessories (including RPSU 5580).
-4. Expand to other AV manufacturers using exactly the same modelling and verification rules.
-5. Later assess NetBox-to-Zabbix inventory synchronization; keep monitoring concerns out of Device Type YAML.
+1. **Luminex:** continue checking GigaCore Gen2 variants, LumiCore and selected LumiNode models against official hardware evidence; add other products (including older generations) only where needed and sourced.
+2. **NETGEAR M4350:** complete batch 1 hardware verification (seven switch models, PSU Module Types and APM414 cards); continue to further batches only after quality checks.
+3. Expand to other AV manufacturers using exactly the same physical modelling, description and verification rules.
+4. Assess NetBox-to-Zabbix inventory synchronization later; keep monitoring concerns out of Device Type YAML.
 
 ## References
 
@@ -237,7 +361,8 @@ For revisions, **compare old versus new**: never lose valid ports, PoE settings,
 - [NetBox community Device Type Library](https://github.com/netbox-community/devicetype-library)
 - [Installed Device and Module Type Importer project](https://github.com/andy-shady-org/netbox-device-module-type-importer)
 - [Luminex](https://www.luminex.be/)
+- [NETGEAR](https://www.netgear.com/business/wired/switches/fully-managed/m4350/)
 
 ---
 
-**Core rule:** describe what is physically present, in the appropriate NetBox field, with traceable evidence and without redundant descriptions. Keep type definitions distinct from live customer inventory and monitoring.
+**Core rule:** describe what is physically present, in the appropriate NetBox field, with traceable evidence and without redundant descriptions. Use `Front`/`Rear` descriptions consistently, validate modules on real test devices, and run description synchronization after creating devices. Keep type definitions distinct from live customer inventory and monitoring.
