@@ -4,5 +4,5 @@ part_number: LU 70 00640
 weight: 0.78
 weight_unit: kg
 power-ports:
-- name: Power In
+- name: Power In {module}
   type: iec-60320-c14
