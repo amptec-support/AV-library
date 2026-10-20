@@ -1,0 +1,33 @@
+manufacturer: Luminex
+model: LumiNode 4
+slug: luminex-luminode-4
+part_number: LU 01 00071
+u_height: 1
+is_full_depth: false
+weight: 1.42
+weight_unit: kg
+interfaces:
+  - name: Ethernet 1
+    type: 1000base-t
+    description: Front EtherCON
+  - name: Ethernet 2
+    type: 1000base-t
+    description: Rear EtherCON
+    poe_mode: pd
+    poe_type: type1-ieee802.3af
+  - name: DMX 1
+    type: other
+    description: XLR5 Female
+  - name: DMX 2
+    type: other
+    description: XLR5 Female
+  - name: DMX 3
+    type: other
+    description: XLR5 Female
+  - name: DMX 4
+    type: other
+    description: XLR5 Female
+power-ports:
+  - name: Power In
+    type: neutrik-powercon-true1
+    maximum_draw: 13
