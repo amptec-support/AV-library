@@ -11,56 +11,82 @@ depth: 250
 interfaces:
 - name: Port 1
   type: 10gbase-x-sfpp
+  description: Front SFP+
 - name: Port 2
   type: 10gbase-x-sfpp
+  description: Front SFP+
 - name: Port 3
   type: 10gbase-x-sfpp
+  description: Front SFP+
 - name: Port 4
   type: 10gbase-x-sfpp
+  description: Front SFP+
 - name: Port 5
   type: 10gbase-x-sfpp
+  description: Front SFP+
 - name: Port 6
   type: 10gbase-x-sfpp
+  description: Front SFP+
 - name: Port 7
   type: 10gbase-x-sfpp
+  description: Front SFP+
 - name: Port 8
   type: 10gbase-x-sfpp
+  description: Front SFP+
 - name: Port 9
   type: 10gbase-x-sfpp
+  description: Front SFP+
 - name: Port 10
   type: 10gbase-x-sfpp
+  description: Front SFP+
 - name: Port 11
   type: 10gbase-x-sfpp
+  description: Front SFP+
 - name: Port 12
   type: 10gbase-x-sfpp
+  description: Front SFP+
 - name: Port 13
   type: 10gbase-x-sfpp
+  description: Front SFP+
 - name: Port 14
   type: 10gbase-x-sfpp
+  description: Front SFP+
 - name: Port 15
   type: 10gbase-x-sfpp
+  description: Front SFP+
 - name: Port 16
   type: 10gbase-x-sfpp
+  description: Front SFP+
 - name: Port 17
   type: 10gbase-x-sfpp
+  description: Front SFP+
 - name: Port 18
   type: 10gbase-x-sfpp
+  description: Front SFP+
 - name: Port 19
   type: 10gbase-x-sfpp
+  description: Front SFP+
 - name: Port 20
   type: 10gbase-x-sfpp
+  description: Front SFP+
 - name: Port 21
   type: 25gbase-x-sfp28
+  description: Front SFP28
 - name: Port 22
   type: 25gbase-x-sfp28
+  description: Front SFP28
 - name: Port 23
   type: 25gbase-x-sfp28
+  description: Front SFP28
 - name: Port 24
   type: 25gbase-x-sfp28
+  description: Front SFP28
 - name: Port 25
   type: 40gbase-x-qsfpp
+  description: Front QSFP
 - name: Port 26
   type: 40gbase-x-qsfpp
+  description: Front QSFP
 power-ports:
 - name: Power In 1
   type: neutrik-powercon-true1
