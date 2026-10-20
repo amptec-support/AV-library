@@ -1,0 +1,77 @@
+manufacturer: Luminex
+model: GigaCore 16i 10G PoE++
+slug: luminex-gigacore-16i-10g-poe
+part_number: LU 01 00090-10G-POE
+u_height: 1
+is_full_depth: false
+weight: 2.4
+weight_unit: kg
+comments: Half-width 19-inch (220 x 296.4 x 43.2 mm); rack mount or VESA 100 x 100
+  mm. PoE budget 450 W, up to 850 W with RPSU 5580.
+interfaces:
+- name: Port 1
+  type: 1000base-t
+  poe_mode: pse
+  poe_type: type4-ieee802.3bt
+- name: Port 2
+  type: 1000base-t
+  poe_mode: pse
+  poe_type: type4-ieee802.3bt
+- name: Port 3
+  type: 1000base-t
+  poe_mode: pse
+  poe_type: type4-ieee802.3bt
+- name: Port 4
+  type: 1000base-t
+  poe_mode: pse
+  poe_type: type4-ieee802.3bt
+- name: Port 5
+  type: 1000base-t
+  poe_mode: pse
+  poe_type: type4-ieee802.3bt
+- name: Port 6
+  type: 1000base-t
+  poe_mode: pse
+  poe_type: type4-ieee802.3bt
+- name: Port 7
+  type: 1000base-t
+  poe_mode: pse
+  poe_type: type4-ieee802.3bt
+- name: Port 8
+  type: 1000base-t
+  poe_mode: pse
+  poe_type: type4-ieee802.3bt
+- name: Port 9
+  type: 1000base-t
+  poe_mode: pse
+  poe_type: type4-ieee802.3bt
+- name: Port 10
+  type: 1000base-t
+  poe_mode: pse
+  poe_type: type4-ieee802.3bt
+- name: Port 11
+  type: 1000base-t
+  poe_mode: pse
+  poe_type: type4-ieee802.3bt
+- name: Port 12
+  type: 1000base-t
+  poe_mode: pse
+  poe_type: type4-ieee802.3bt
+- name: Port 13
+  type: 10gbase-x-sfpp
+- name: Port 14
+  type: 10gbase-x-sfpp
+- name: Port 15
+  type: 10gbase-x-sfpp
+- name: Port 16
+  type: 10gbase-x-sfpp
+console-ports:
+- name: Console
+  type: usb-c
+power-ports:
+- name: Power In
+  type: iec-60320-c14
+  maximum_draw: 515
+- name: Second PSU
+  type: other
+  description: RPSU 5580 DC input
