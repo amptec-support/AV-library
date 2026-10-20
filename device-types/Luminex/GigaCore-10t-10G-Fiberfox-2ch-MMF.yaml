@@ -15,7 +15,7 @@ comments: >-
   and https://support.luminex.be/portal/en/kb/articles/sfp-modules
 power-ports:
   - name: AC Input
-    type: powercon-true1
+    type: neutrik-powercon-true1
 interfaces:
   - name: Port 1
     type: 1000base-t
