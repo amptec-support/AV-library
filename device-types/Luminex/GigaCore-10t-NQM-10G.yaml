@@ -48,13 +48,11 @@ interfaces:
 - name: Port 9
   type: 10gbase-x-sfpp
   label: '9'
-  description: 'Front Port 9: fixed Neutrik opticalCON QUAD MMF external connector; internal 10G optical transceiver;
-    one duplex link (TX/RX)'
+  description: 'Front Neutrik opticalCON QUAD MMF'
 - name: Port 10
   type: 10gbase-x-sfpp
   label: '10'
-  description: 'Front Port 10: fixed Neutrik opticalCON QUAD MMF external connector; internal 10G optical transceiver;
-    one duplex link (TX/RX)'
+  description: 'Front Neutrik opticalCON QUAD MMF'
 power-ports:
 - name: AC Input
   type: neutrik-powercon-true1

@@ -65,13 +65,11 @@ interfaces:
 - name: Port 9
   type: 1000base-x-sfp
   label: '9'
-  description: 'Front Port 9: fixed Fiberfox 4ch MMF external connector; internal 1G optical transceiver; one duplex
-    link (TX/RX); 4 fiber positions, only 2 used for this optical link'
+  description: 'Front Fiberfox 4ch MMF'
 - name: Port 10
   type: 1000base-x-sfp
   label: '10'
-  description: 'Front Port 10: fixed Fiberfox 4ch MMF external connector; internal 1G optical transceiver; one duplex
-    link (TX/RX); 4 fiber positions, only 2 used for this optical link'
+  description: 'Front Fiberfox 4ch MMF'
 power-ports:
 - name: AC Input
   type: neutrik-powercon-true1
