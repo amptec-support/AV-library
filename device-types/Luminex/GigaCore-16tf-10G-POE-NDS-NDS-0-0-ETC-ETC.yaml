@@ -1,12 +1,12 @@
 manufacturer: Luminex
-model: GigaCore 16tf 10G PoE++ 0/0/ETC/ETC/ETC/ETC
-slug: luminex-gigacore-16tf-10g-poe-0-0-etc-etc-etc-etc
-part_number: LU 01 00100-10G-POE-0/0/ETC/ETC/ETC/ETC
+model: GigaCore 16tf 10G PoE++ NDS/NDS/0/0/ETC/ETC
+slug: luminex-gigacore-16tf-poe-nds-nds-0-0-etc-etc-10g
+part_number: LU 01 00100-10G-POE-NDS/NDS/0/0/ETC/ETC
 u_height: 1
 is_full_depth: false
 weight: 4
 weight_unit: kg
-comments: '19-inch rackmount, 482 x 237.6 x 44 mm (W x D x H). Luminex specification
+comments: '19-inch rackmount, 482 x 240.1 x 44 mm (W x D x H). Luminex specification
   v1.0.5: https://www.luminex.be/wp-content/uploads/2025/03/Product-specification-sheet-GigaCore-16tf-v1.0.5.pdf'
 interfaces:
 - name: Port 1
@@ -70,11 +70,11 @@ interfaces:
   poe_mode: pse
   poe_type: type4-ieee802.3bt
 - name: Port 13
-  type: 10gbase-t
-  description: Rear EtherCON
+  type: 10gbase-x-sfpp
+  description: Front Neutrik opticalCON DUO SMF
 - name: Port 14
-  type: 10gbase-t
-  description: Rear EtherCON
+  type: 10gbase-x-sfpp
+  description: Front Neutrik opticalCON DUO SMF
 - name: Port 15
   type: 10gbase-t
   description: Rear EtherCON
@@ -84,6 +84,7 @@ interfaces:
 power-ports:
 - name: Power In
   type: neutrik-powercon-true1
+  maximum_draw: 495
 - name: Second PSU
   type: other
   description: RPSU 5580 DC input

@@ -1,0 +1,67 @@
+manufacturer: Luminex
+model: GigaCore 16tf 1G NQM/0M/0/0/NQM/0M
+slug: luminex-gigacore-16tf-nqm-0m-0-0-nqm-0m-1g
+part_number: LU 01 00100-1G-NQM/0M/0/0/NQM/0M
+u_height: 1
+is_full_depth: false
+weight: 4
+weight_unit: kg
+comments: '19-inch rackmount, 482 x 240.1 x 44 mm (W x D x H). Luminex specification
+  v1.0.5: https://www.luminex.be/wp-content/uploads/2025/03/Product-specification-sheet-GigaCore-16tf-v1.0.5.pdf'
+interfaces:
+- name: Port 1
+  type: 1000base-t
+  description: Front EtherCON
+- name: Port 2
+  type: 1000base-t
+  description: Front EtherCON
+- name: Port 3
+  type: 1000base-t
+  description: Front EtherCON
+- name: Port 4
+  type: 1000base-t
+  description: Front EtherCON
+- name: Port 5
+  type: 1000base-t
+  description: Front EtherCON
+- name: Port 6
+  type: 1000base-t
+  description: Front EtherCON
+- name: Port 7
+  type: 1000base-t
+  description: Front EtherCON
+- name: Port 8
+  type: 1000base-t
+  description: Front EtherCON
+- name: Port 9
+  type: 1000base-t
+  description: Front EtherCON
+- name: Port 10
+  type: 1000base-t
+  description: Front EtherCON
+- name: Port 11
+  type: 1000base-t
+  description: Front EtherCON
+- name: Port 12
+  type: 1000base-t
+  description: Front EtherCON
+- name: Port 13
+  type: 1000base-x-sfp
+  description: Front Neutrik opticalCON QUAD MMF
+- name: Port 14
+  type: 1000base-x-sfp
+  description: Front Neutrik opticalCON QUAD MMF (shared with Port 13)
+- name: Port 15
+  type: 1000base-x-sfp
+  description: Rear Neutrik opticalCON QUAD MMF
+- name: Port 16
+  type: 1000base-x-sfp
+  description: Rear Neutrik opticalCON QUAD MMF (shared with Port 15)
+power-ports:
+- name: Power In
+  type: neutrik-powercon-true1
+  maximum_draw: 16
+power-outlets:
+- name: Power Out
+  type: neutrik-powercon-true1
+  power_port: Power In
