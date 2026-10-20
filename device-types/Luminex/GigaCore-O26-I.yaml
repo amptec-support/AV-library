@@ -1,0 +1,68 @@
+manufacturer: Luminex
+model: GigaCore O26-I
+slug: luminex-gigacore-o26-i
+part_number: LU 01 00101
+u_height: 1
+is_full_depth: false
+airflow: front-to-rear
+weight: 4
+weight_unit: kg
+depth: 250
+interfaces:
+- name: Port 1
+  type: 10gbase-x-sfpp
+- name: Port 2
+  type: 10gbase-x-sfpp
+- name: Port 3
+  type: 10gbase-x-sfpp
+- name: Port 4
+  type: 10gbase-x-sfpp
+- name: Port 5
+  type: 10gbase-x-sfpp
+- name: Port 6
+  type: 10gbase-x-sfpp
+- name: Port 7
+  type: 10gbase-x-sfpp
+- name: Port 8
+  type: 10gbase-x-sfpp
+- name: Port 9
+  type: 10gbase-x-sfpp
+- name: Port 10
+  type: 10gbase-x-sfpp
+- name: Port 11
+  type: 10gbase-x-sfpp
+- name: Port 12
+  type: 10gbase-x-sfpp
+- name: Port 13
+  type: 10gbase-x-sfpp
+- name: Port 14
+  type: 10gbase-x-sfpp
+- name: Port 15
+  type: 10gbase-x-sfpp
+- name: Port 16
+  type: 10gbase-x-sfpp
+- name: Port 17
+  type: 10gbase-x-sfpp
+- name: Port 18
+  type: 10gbase-x-sfpp
+- name: Port 19
+  type: 10gbase-x-sfpp
+- name: Port 20
+  type: 10gbase-x-sfpp
+- name: Port 21
+  type: 25gbase-x-sfp28
+- name: Port 22
+  type: 25gbase-x-sfp28
+- name: Port 23
+  type: 25gbase-x-sfp28
+- name: Port 24
+  type: 25gbase-x-sfp28
+- name: Port 25
+  type: 40gbase-x-qsfpp
+- name: Port 26
+  type: 40gbase-x-qsfpp
+power-ports:
+- name: Power In 1
+  type: neutrik-powercon-true1
+- name: Power In 2
+  type: neutrik-powercon-true1
