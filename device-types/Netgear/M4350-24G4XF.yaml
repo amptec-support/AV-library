@@ -1,128 +1,152 @@
----
 manufacturer: Netgear
-model: M4250-26G4XF-PoE+ (GSM4230P)
-slug: netgear-m4250-26g4xf-poe-plus
-part_number: M4250-26G4XF-PoE+
+model: M4350-24G4XF
+slug: netgear-m4350-24g4xf
+part_number: GSM4328
 u_height: 1
-is_full_depth: false
-airflow: left-to-right
-comments: 'Adapted from NetBox Community Device Type Library: device-types/Netgear/m4250-26g4xf-poep-gsm4230p.yaml.
-  Check exact SKU label before using.'
-power-ports:
-- name: Power
-  type: iec-60320-c14
-  maximum_draw: 556
-console-ports:
-- name: console
-  type: rj-45
-- name: oob-management
-  type: rj-45
+is_full_depth: true
 interfaces:
-- name: 0/1
+- name: Port 1
   type: 1000base-t
+  description: Front RJ45
   poe_mode: pse
   poe_type: type2-ieee802.3at
-- name: 0/2
+- name: Port 2
   type: 1000base-t
+  description: Front RJ45
   poe_mode: pse
   poe_type: type2-ieee802.3at
-- name: 0/3
+- name: Port 3
   type: 1000base-t
+  description: Front RJ45
   poe_mode: pse
   poe_type: type2-ieee802.3at
-- name: 0/4
+- name: Port 4
   type: 1000base-t
+  description: Front RJ45
   poe_mode: pse
   poe_type: type2-ieee802.3at
-- name: 0/5
+- name: Port 5
   type: 1000base-t
+  description: Front RJ45
   poe_mode: pse
   poe_type: type2-ieee802.3at
-- name: 0/6
+- name: Port 6
   type: 1000base-t
+  description: Front RJ45
   poe_mode: pse
   poe_type: type2-ieee802.3at
-- name: 0/7
+- name: Port 7
   type: 1000base-t
+  description: Front RJ45
   poe_mode: pse
   poe_type: type2-ieee802.3at
-- name: 0/8
+- name: Port 8
   type: 1000base-t
+  description: Front RJ45
   poe_mode: pse
   poe_type: type2-ieee802.3at
-- name: 0/9
+- name: Port 9
   type: 1000base-t
+  description: Front RJ45
   poe_mode: pse
   poe_type: type2-ieee802.3at
-- name: 0/10
+- name: Port 10
   type: 1000base-t
+  description: Front RJ45
   poe_mode: pse
   poe_type: type2-ieee802.3at
-- name: 0/11
+- name: Port 11
   type: 1000base-t
+  description: Front RJ45
   poe_mode: pse
   poe_type: type2-ieee802.3at
-- name: 0/12
+- name: Port 12
   type: 1000base-t
+  description: Front RJ45
   poe_mode: pse
   poe_type: type2-ieee802.3at
-- name: 0/13
+- name: Port 13
   type: 1000base-t
+  description: Front RJ45
   poe_mode: pse
   poe_type: type2-ieee802.3at
-- name: 0/14
+- name: Port 14
   type: 1000base-t
+  description: Front RJ45
   poe_mode: pse
   poe_type: type2-ieee802.3at
-- name: 0/15
+- name: Port 15
   type: 1000base-t
+  description: Front RJ45
   poe_mode: pse
   poe_type: type2-ieee802.3at
-- name: 0/16
+- name: Port 16
   type: 1000base-t
+  description: Front RJ45
   poe_mode: pse
   poe_type: type2-ieee802.3at
-- name: 0/17
+- name: Port 17
   type: 1000base-t
+  description: Front RJ45
   poe_mode: pse
   poe_type: type2-ieee802.3at
-- name: 0/18
+- name: Port 18
   type: 1000base-t
+  description: Front RJ45
   poe_mode: pse
   poe_type: type2-ieee802.3at
-- name: 0/19
+- name: Port 19
   type: 1000base-t
+  description: Front RJ45
   poe_mode: pse
   poe_type: type2-ieee802.3at
-- name: 0/20
+- name: Port 20
   type: 1000base-t
+  description: Front RJ45
   poe_mode: pse
   poe_type: type2-ieee802.3at
-- name: 0/21
+- name: Port 21
   type: 1000base-t
+  description: Front RJ45
   poe_mode: pse
   poe_type: type2-ieee802.3at
-- name: 0/22
+- name: Port 22
   type: 1000base-t
+  description: Front RJ45
   poe_mode: pse
   poe_type: type2-ieee802.3at
-- name: 0/23
+- name: Port 23
   type: 1000base-t
+  description: Front RJ45
   poe_mode: pse
   poe_type: type2-ieee802.3at
-- name: 0/24
+- name: Port 24
   type: 1000base-t
+  description: Front RJ45
   poe_mode: pse
   poe_type: type2-ieee802.3at
-- name: 0/25
-  type: 1000base-t
-- name: 0/26
-  type: 1000base-t
-- name: 0/27
+- name: Port 25
   type: 10gbase-x-sfpp
-- name: 0/28
+  description: Front SFP+
+- name: Port 26
   type: 10gbase-x-sfpp
-- name: 0/29
+  description: Front SFP+
+- name: Port 27
   type: 10gbase-x-sfpp
-- name: 0/30
+  description: Front SFP+
+- name: Port 28
   type: 10gbase-x-sfpp
+  description: Front SFP+
+- name: OOB Management
+  type: 1000base-t
+  description: Rear RJ45
+power-ports:
+- name: Power In
+  type: iec-60320-c14
+module-bays:
+- name: PSU 1
+  position: '1'
+console-ports:
+- name: Console
+  type: usb-c
+  description: Front USB-C

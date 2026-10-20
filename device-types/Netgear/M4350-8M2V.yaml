@@ -1,0 +1,70 @@
+manufacturer: Netgear
+model: M4350-8M2V
+slug: netgear-m4350-8m2v
+part_number: MSM4310
+u_height: 1
+is_full_depth: true
+interfaces:
+- name: Port 1
+  type: 2.5gbase-t
+  description: Front RJ45
+  poe_mode: pse
+  poe_type: type4-ieee802.3bt
+- name: Port 2
+  type: 2.5gbase-t
+  description: Front RJ45
+  poe_mode: pse
+  poe_type: type4-ieee802.3bt
+- name: Port 3
+  type: 2.5gbase-t
+  description: Front RJ45
+  poe_mode: pse
+  poe_type: type4-ieee802.3bt
+- name: Port 4
+  type: 2.5gbase-t
+  description: Front RJ45
+  poe_mode: pse
+  poe_type: type4-ieee802.3bt
+- name: Port 5
+  type: 2.5gbase-t
+  description: Front RJ45
+  poe_mode: pse
+  poe_type: type4-ieee802.3bt
+- name: Port 6
+  type: 2.5gbase-t
+  description: Front RJ45
+  poe_mode: pse
+  poe_type: type4-ieee802.3bt
+- name: Port 7
+  type: 2.5gbase-t
+  description: Front RJ45
+  poe_mode: pse
+  poe_type: type4-ieee802.3bt
+- name: Port 8
+  type: 2.5gbase-t
+  description: Front RJ45
+  poe_mode: pse
+  poe_type: type4-ieee802.3bt
+- name: Port 9
+  type: 25gbase-x-sfp28
+  description: Front SFP28
+- name: Port 10
+  type: 25gbase-x-sfp28
+  description: Front SFP28
+- name: OOB Management
+  type: 1000base-t
+  description: Rear RJ45
+power-ports:
+- name: DC In 1
+  type: other
+  description: APS254W external power adapter
+- name: DC In 2
+  type: other
+  description: APS254W external power adapter
+- name: DC In 3
+  type: other
+  description: APS254W external power adapter
+console-ports:
+- name: Console
+  type: usb-c
+  description: Front USB-C

@@ -1,0 +1,16 @@
+manufacturer: Netgear
+model: M4350 APM414V 4x25G SFP28
+part_number: APM414V
+interfaces:
+- name: Port 1
+  type: 25gbase-x-sfp28
+  description: Front SFP28
+- name: Port 2
+  type: 25gbase-x-sfp28
+  description: Front SFP28
+- name: Port 3
+  type: 25gbase-x-sfp28
+  description: Front SFP28
+- name: Port 4
+  type: 25gbase-x-sfp28
+  description: Front SFP28
