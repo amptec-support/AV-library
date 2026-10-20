@@ -93,9 +93,9 @@ module-bays:
   position: '1'
 power-ports:
 - name: Power In 1
-  type: neutrik-powercon
+  type: neutrik-powercon-20
 - name: Power In 2
-  type: neutrik-powercon
+  type: neutrik-powercon-20
 console-ports:
 - name: Console
   type: usb-c

@@ -77,18 +77,38 @@ interfaces:
 - name: Port 24
   type: 2.5gbase-x-sfp
   description: Front SFP
-- name: Port 25
-  type: other
-  description: Front combo RJ45 / SFP+
-- name: Port 26
-  type: other
-  description: Front combo RJ45 / SFP+
-- name: Port 27
-  type: other
-  description: Front combo RJ45 / SFP+
-- name: Port 28
-  type: other
-  description: Front combo RJ45 / SFP+
+- name: Port 25 - RJ45
+  label: "25"
+  type: 10gbase-t
+  description: Combo with Port 25 - SFP+
+- name: Port 25 - SFP+
+  label: "25F"
+  type: 10gbase-x-sfpp
+  description: Combo with Port 25 - RJ45
+- name: Port 26 - RJ45
+  label: "26"
+  type: 10gbase-t
+  description: Combo with Port 26 - SFP+
+- name: Port 26 - SFP+
+  label: "26F"
+  type: 10gbase-x-sfpp
+  description: Combo with Port 26 - RJ45
+- name: Port 27 - RJ45
+  label: "27"
+  type: 10gbase-t
+  description: Combo with Port 27 - SFP+
+- name: Port 27 - SFP+
+  label: "27F"
+  type: 10gbase-x-sfpp
+  description: Combo with Port 27 - RJ45
+- name: Port 28 - RJ45
+  label: "28"
+  type: 10gbase-t
+  description: Combo with Port 28 - SFP+
+- name: Port 28 - SFP+
+  label: "28F"
+  type: 10gbase-x-sfpp
+  description: Combo with Port 28 - RJ45
 - name: OOB Management
   type: 1000base-t
   description: Rear RJ45
