@@ -366,3 +366,16 @@ Then run the **same command**. The current implementation uses a database transa
 ---
 
 **Core rule:** describe what is physically present, in the appropriate NetBox field, with traceable evidence and without redundant descriptions. Use `Front`/`Rear` descriptions consistently, validate modules on real test devices, and run description synchronization after creating devices. Keep type definitions distinct from live customer inventory and monitoring.
+
+## Rack occupancy (`is_full_depth`)
+
+Use `is_full_depth: false` **by default for rack-mounted AV/network switches**. This indicates that the device does not reserve the opposite face of the same rack unit in NetBox; a rear-mounted patch panel or other shallow equipment may share the rack unit **if the physical installation actually permits it**.
+
+```yaml
+u_height: 1
+is_full_depth: false
+```
+
+Set `is_full_depth: true` only where physical depth, rack mounting, rear-rail occupation or required clearance genuinely prevents equipment being installed on the opposite face at the same rack unit. Verify this from the manufacturer and rack design, rather than guessing from switch model size. This setting does **not** guarantee sufficient cable bend radius, airflow or installation clearance.
+
+When modifying a Device Type, verify the setting on existing Device instances and rack elevations; changes to the type do not necessarily rewrite existing device values.
