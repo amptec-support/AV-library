@@ -3,33 +3,20 @@ model: 10D
 slug: db-audiotechnik-10d
 u_height: 2
 is_full_depth: false
-description: Installation amplifier; 4 output channels, analog and AES3 I/O, Ethernet
-  control and CAN bus.
+description: Installation amplifier; 4 output channels, analog and AES3 I/O, Ethernet control and CAN bus.
 interfaces:
 - name: Analog Input A1
   type: other
-  description: Rear Euroblock 3-pin
+  description: Rear Euroblock 3-pin - analog input / link tap
 - name: Analog Input A2
   type: other
-  description: Rear Euroblock 3-pin
+  description: Rear Euroblock 3-pin - analog input / link tap
 - name: Analog Input A3
   type: other
-  description: Rear Euroblock 3-pin
+  description: Rear Euroblock 3-pin - analog input / link tap
 - name: Analog Input A4
   type: other
-  description: Rear Euroblock 3-pin
-- name: Analog Link A1
-  type: other
-  description: Rear Euroblock 3-pin
-- name: Analog Link A2
-  type: other
-  description: Rear Euroblock 3-pin
-- name: Analog Link A3
-  type: other
-  description: Rear Euroblock 3-pin
-- name: Analog Link A4
-  type: other
-  description: Rear Euroblock 3-pin
+  description: Rear Euroblock 3-pin - analog input / link tap
 - name: AES3 Input D1/2
   type: other
   description: Rear Euroblock 3-pin

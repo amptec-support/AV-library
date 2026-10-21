@@ -3,33 +3,20 @@ model: 40D
 slug: db-audiotechnik-40d
 u_height: 2
 is_full_depth: false
-description: Installation amplifier; 4 output channels, analog/AES3 I/O, Milan, GPIO
-  and OCA/AES70.
+description: Installation amplifier; 4 output channels, analog/AES3 I/O, Milan, GPIO and OCA/AES70.
 interfaces:
 - name: Analog Input A1
   type: other
-  description: Rear Euroblock 3-pin
+  description: Rear Euroblock 3-pin - analog input / link tap
 - name: Analog Input A2
   type: other
-  description: Rear Euroblock 3-pin
+  description: Rear Euroblock 3-pin - analog input / link tap
 - name: Analog Input A3
   type: other
-  description: Rear Euroblock 3-pin
+  description: Rear Euroblock 3-pin - analog input / link tap
 - name: Analog Input A4
   type: other
-  description: Rear Euroblock 3-pin
-- name: Analog Link A1
-  type: other
-  description: Rear Euroblock 3-pin
-- name: Analog Link A2
-  type: other
-  description: Rear Euroblock 3-pin
-- name: Analog Link A3
-  type: other
-  description: Rear Euroblock 3-pin
-- name: Analog Link A4
-  type: other
-  description: Rear Euroblock 3-pin
+  description: Rear Euroblock 3-pin - analog input / link tap
 - name: AES3 Input D1/2
   type: other
   description: Rear Euroblock 3-pin

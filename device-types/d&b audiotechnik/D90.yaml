@@ -4,8 +4,7 @@ slug: db-audiotechnik-d90
 part_number: Z2860
 u_height: 2
 is_full_depth: false
-description: Touring amplifier; 4 output channels, XLR analog/AES3 I/O, Milan and
-  NL4/NL8 speaker outputs.
+description: Touring amplifier; 4 output channels, XLR analog/AES3 I/O, Milan and NL4/NL8 speaker outputs.
 interfaces:
 - name: Analog Input A1
   type: other
@@ -64,3 +63,7 @@ interfaces:
 - name: Ethernet 2
   type: 1000base-t
   description: Rear RJ45
+power-ports:
+- name: Mains Input
+  type: neutrik-powercon-32
+  description: Rear powerCON-HC
