@@ -4,8 +4,9 @@ slug: netgear-m4250-16xf
 part_number: XSM4216F
 u_height: 1
 is_full_depth: false
-description: NETGEAR AV Line M4250-16XF (XSM4216F). 10G aggregation; ports 1-12 also support 1G auto-negotiation; ports 13-16
-  1G manual setting. Network connectors physically on rear in standard AV orientation; reversible rackmount.
+description: 'M4250-16XF (XSM4216F): 10G aggregation; 1G auto-negotiation on ports
+  1-12, manual 1G setting on 13-16. Rear network ports in standard AV orientation;
+  reversible mounting.'
 interfaces:
 - name: Port 1
   type: 10gbase-x-sfpp

@@ -4,8 +4,9 @@ slug: netgear-m4250-40g8xf-poe-plus-plus
 part_number: GSM4248UX
 u_height: 2
 is_full_depth: false
-description: NETGEAR AV Line M4250-40G8XF-PoE++ (GSM4248UX). 2880W PoE budget when all three fixed power supplies connected;
-  2U chassis. Network connectors physically on rear in standard AV orientation; reversible rackmount.
+description: NETGEAR AV Line M4250-40G8XF-PoE++ (GSM4248UX). 2880W PoE budget with
+  all three fixed supplies connected. 2U. Network ports at rear in standard AV orientation;
+  reversible mounting.
 interfaces:
 - name: Port 1
   type: 1000base-t
