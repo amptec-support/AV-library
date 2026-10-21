@@ -1,0 +1,81 @@
+manufacturer: Netgear
+model: M4350-16V4C
+slug: netgear-m4350-16v4c
+part_number: VSM4320C
+u_height: 1
+is_full_depth: true
+interfaces:
+- name: Port 1
+  type: 25gbase-x-sfp28
+  description: Front SFP28
+- name: Port 2
+  type: 25gbase-x-sfp28
+  description: Front SFP28
+- name: Port 3
+  type: 25gbase-x-sfp28
+  description: Front SFP28
+- name: Port 4
+  type: 25gbase-x-sfp28
+  description: Front SFP28
+- name: Port 5
+  type: 25gbase-x-sfp28
+  description: Front SFP28
+- name: Port 6
+  type: 25gbase-x-sfp28
+  description: Front SFP28
+- name: Port 7
+  type: 25gbase-x-sfp28
+  description: Front SFP28
+- name: Port 8
+  type: 25gbase-x-sfp28
+  description: Front SFP28
+- name: Port 9
+  type: 25gbase-x-sfp28
+  description: Front SFP28
+- name: Port 10
+  type: 25gbase-x-sfp28
+  description: Front SFP28
+- name: Port 11
+  type: 25gbase-x-sfp28
+  description: Front SFP28
+- name: Port 12
+  type: 25gbase-x-sfp28
+  description: Front SFP28
+- name: Port 13
+  type: 25gbase-x-sfp28
+  description: Front SFP28
+- name: Port 14
+  type: 25gbase-x-sfp28
+  description: Front SFP28
+- name: Port 15
+  type: 25gbase-x-sfp28
+  description: Front SFP28
+- name: Port 16
+  type: 25gbase-x-sfp28
+  description: Front SFP28
+- name: Port 17
+  type: 100gbase-x-qsfp28
+  description: Front QSFP28
+- name: Port 18
+  type: 100gbase-x-qsfp28
+  description: Front QSFP28
+- name: Port 19
+  type: 100gbase-x-qsfp28
+  description: Front QSFP28
+- name: Port 20
+  type: 100gbase-x-qsfp28
+  description: Front QSFP28
+- name: OOB Management
+  type: 1000base-t
+  description: Rear RJ45
+power-ports:
+- name: Power In
+  type: iec-60320-c14
+module-bays:
+- name: PSU 1
+  position: '1'
+  description: 'Compatible: APS600Wv3, APS1200Wv2, APS2000Wv2'
+console-ports:
+- name: Console
+  type: usb-c
+  description: Front USB-C
