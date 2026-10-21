@@ -3,7 +3,7 @@ model: M4350-16M4V
 slug: netgear-m4350-16m4v
 part_number: MSM4320
 u_height: 1
-is_full_depth: true
+is_full_depth: false
 interfaces:
 - name: Port 1
   type: 2.5gbase-t

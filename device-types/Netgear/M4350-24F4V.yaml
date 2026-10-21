@@ -3,7 +3,7 @@ model: M4350-24F4V
 slug: netgear-m4350-24f4v
 part_number: XSM4328FV
 u_height: 1
-is_full_depth: true
+is_full_depth: false
 interfaces:
 - name: Port 1
   type: 10gbase-x-sfpp

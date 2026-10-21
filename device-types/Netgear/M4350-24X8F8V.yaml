@@ -3,7 +3,7 @@ model: M4350-24X8F8V
 slug: netgear-m4350-24x8f8v
 part_number: XSM4340V
 u_height: 1
-is_full_depth: true
+is_full_depth: false
 interfaces:
 - name: Port 1
   type: 10gbase-t

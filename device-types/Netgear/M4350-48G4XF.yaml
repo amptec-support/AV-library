@@ -3,7 +3,7 @@ model: M4350-48G4XF
 slug: netgear-m4350-48g4xf
 part_number: GSM4352
 u_height: 1
-is_full_depth: true
+is_full_depth: false
 interfaces:
 - name: Port 1
   type: 1000base-t
