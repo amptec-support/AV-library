@@ -1,0 +1,109 @@
+manufacturer: Netgear
+model: M4300-28G
+slug: netgear-m4300-28g
+part_number: GSM4328S
+u_height: 1
+is_full_depth: false
+interfaces:
+- name: Port 1
+  type: 1000base-t
+  description: Front RJ45
+- name: Port 2
+  type: 1000base-t
+  description: Front RJ45
+- name: Port 3
+  type: 1000base-t
+  description: Front RJ45
+- name: Port 4
+  type: 1000base-t
+  description: Front RJ45
+- name: Port 5
+  type: 1000base-t
+  description: Front RJ45
+- name: Port 6
+  type: 1000base-t
+  description: Front RJ45
+- name: Port 7
+  type: 1000base-t
+  description: Front RJ45
+- name: Port 8
+  type: 1000base-t
+  description: Front RJ45
+- name: Port 9
+  type: 1000base-t
+  description: Front RJ45
+- name: Port 10
+  type: 1000base-t
+  description: Front RJ45
+- name: Port 11
+  type: 1000base-t
+  description: Front RJ45
+- name: Port 12
+  type: 1000base-t
+  description: Front RJ45
+- name: Port 13
+  type: 1000base-t
+  description: Front RJ45
+- name: Port 14
+  type: 1000base-t
+  description: Front RJ45
+- name: Port 15
+  type: 1000base-t
+  description: Front RJ45
+- name: Port 16
+  type: 1000base-t
+  description: Front RJ45
+- name: Port 17
+  type: 1000base-t
+  description: Front RJ45
+- name: Port 18
+  type: 1000base-t
+  description: Front RJ45
+- name: Port 19
+  type: 1000base-t
+  description: Front RJ45
+- name: Port 20
+  type: 1000base-t
+  description: Front RJ45
+- name: Port 21
+  type: 1000base-t
+  description: Front RJ45
+- name: Port 22
+  type: 1000base-t
+  description: Front RJ45
+- name: Port 23
+  type: 1000base-t
+  description: Front RJ45
+- name: Port 24
+  type: 1000base-t
+  description: Front RJ45
+- name: Port 25
+  type: 10gbase-t
+  description: Front RJ45
+- name: Port 26
+  type: 10gbase-t
+  description: Front RJ45
+- name: Port 27
+  type: 10gbase-x-sfpp
+  description: Front SFP+
+- name: Port 28
+  type: 10gbase-x-sfpp
+  description: Front SFP+
+- name: OOB Management
+  type: 1000base-t
+  description: Front RJ45
+console-ports:
+- name: Console RJ45
+  type: rj-45
+  description: Rear RJ45
+- name: Console Mini-USB
+  type: usb-mini-b
+  description: Front Mini-USB
+module-bays:
+- name: PSU 1
+  position: '1'
+  description: 'Compatible: APS150W; compatibility enforcement requires NetBox Bay Types'
+- name: PSU 2
+  position: '2'
+  description: 'Compatible: APS150W; compatibility enforcement requires NetBox Bay Types'
+comments: 'Factory-supplied PSU: APS150W. Model-specific compatibility requires verification.'

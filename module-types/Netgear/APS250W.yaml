@@ -1,0 +1,7 @@
+manufacturer: Netgear
+model: APS250W
+description: Removable NETGEAR M4300 PSU; nominal output rating is not device maximum draw.
+power-ports:
+- name: Power In {module}
+  type: iec-60320-c14
+  description: Rear AC inlet

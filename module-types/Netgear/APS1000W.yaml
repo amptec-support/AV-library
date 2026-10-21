@@ -1,0 +1,4 @@
+manufacturer: Netgear
+model: APS1000W
+description: Removable NETGEAR M4300 PSU. AC inlet is likely C16 (requires C15 cord); pin down exact equipment inlet
+  before adding NetBox power-port template.
