@@ -10,39 +10,27 @@ interfaces:
 - name: Analog Input A1
   type: other
   description: Rear XLR3 Female
-- name: Analog Input A2
+- name: Input A2 / AES3 D1/2
   type: other
-  description: Rear XLR3 Female
+  description: Rear XLR3 Female - analog/AES3 selectable
 - name: Analog Input A3
   type: other
   description: Rear XLR3 Female
-- name: Analog Input A4
+- name: Input A4 / AES3 D3/4
   type: other
-  description: Rear XLR3 Female
+  description: Rear XLR3 Female - analog/AES3 selectable
 - name: Analog Link A1
   type: other
   description: Rear XLR3 Male
-- name: Analog Link A2
+- name: Link A2 / AES3 D1/2
   type: other
-  description: Rear XLR3 Male
+  description: Rear XLR3 Male - analog/AES3 selectable
 - name: Analog Link A3
   type: other
   description: Rear XLR3 Male
-- name: Analog Link A4
+- name: Link A4 / AES3 D3/4
   type: other
-  description: Rear XLR3 Male
-- name: AES3 Input D1/2
-  type: other
-  description: Rear XLR3 Female
-- name: AES3 Input D3/4
-  type: other
-  description: Rear XLR3 Female
-- name: AES3 Link D1/2
-  type: other
-  description: Rear XLR3 Male
-- name: AES3 Link D3/4
-  type: other
-  description: Rear XLR3 Male
+  description: Rear XLR3 Male - analog/AES3 selectable
 - name: Speaker Output A
   type: other
   description: Rear speakON NL4
@@ -70,3 +58,7 @@ interfaces:
 - name: CAN 2
   type: other
   description: Rear RJ45 - CAN bus
+power-ports:
+- name: Power In
+  type: neutrik-powercon-32
+  description: Rear powerCON-HC 32A
