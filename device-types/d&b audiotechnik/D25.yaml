@@ -1,0 +1,69 @@
+manufacturer: d&b audiotechnik
+model: D25
+slug: db-audiotechnik-d25
+u_height: 2
+is_full_depth: false
+description: Touring amplifier; 4 output channels, XLR analog/AES3 I/O, Milan and
+  NL4/NL8 speaker outputs.
+interfaces:
+- name: Analog Input A1
+  type: other
+  description: Rear XLR3 Female
+- name: Analog Input A2
+  type: other
+  description: Rear XLR3 Female
+- name: Analog Input A3
+  type: other
+  description: Rear XLR3 Female
+- name: Analog Input A4
+  type: other
+  description: Rear XLR3 Female
+- name: Analog Link A1
+  type: other
+  description: Rear XLR3 Male
+- name: Analog Link A2
+  type: other
+  description: Rear XLR3 Male
+- name: Analog Link A3
+  type: other
+  description: Rear XLR3 Male
+- name: Analog Link A4
+  type: other
+  description: Rear XLR3 Male
+- name: AES3 Input D1/2
+  type: other
+  description: Rear XLR3 Female
+- name: AES3 Input D3/4
+  type: other
+  description: Rear XLR3 Female
+- name: AES3 Link D1/2
+  type: other
+  description: Rear XLR3 Male
+- name: AES3 Link D3/4
+  type: other
+  description: Rear XLR3 Male
+- name: Speaker Output A
+  type: other
+  description: Rear speakON NL4
+- name: Speaker Output B
+  type: other
+  description: Rear speakON NL4
+- name: Speaker Output C
+  type: other
+  description: Rear speakON NL4
+- name: Speaker Output D
+  type: other
+  description: Rear speakON NL4
+- name: 4 Channel Output
+  type: other
+  description: Rear speakON NL8 - alternative to NL4 outputs
+- name: Ethernet 1
+  type: 1000base-t
+  description: Rear RJ45
+- name: Ethernet 2
+  type: 1000base-t
+  description: Rear RJ45
+power-ports:
+- name: Mains Input
+  type: neutrik-powercon-true1
+  description: Rear mains inlet

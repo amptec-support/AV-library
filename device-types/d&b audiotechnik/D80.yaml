@@ -1,15 +1,72 @@
----
 manufacturer: d&b audiotechnik
 model: D80
-slug: d-b-audiotechnik-d80
+slug: db-audiotechnik-d80
+part_number: Z2710
 u_height: 2
-is_full_depth: true
-description: 4-channel touring amplifier
-comments: 'Source: https://www.dbaudio.com/global/en/products/amplifiers/d80/ . Physical
-  audio and loudspeaker connectors documented by manufacturer but not represented
-  as Ethernet interfaces.'
+is_full_depth: false
+description: Touring amplifier; 4 output channels, XLR analog/AES3 I/O, CAN bus and
+  NL4/NL8 speaker outputs.
 interfaces:
+- name: Analog Input A1
+  type: other
+  description: Rear XLR3 Female
+- name: Analog Input A2
+  type: other
+  description: Rear XLR3 Female
+- name: Analog Input A3
+  type: other
+  description: Rear XLR3 Female
+- name: Analog Input A4
+  type: other
+  description: Rear XLR3 Female
+- name: Analog Link A1
+  type: other
+  description: Rear XLR3 Male
+- name: Analog Link A2
+  type: other
+  description: Rear XLR3 Male
+- name: Analog Link A3
+  type: other
+  description: Rear XLR3 Male
+- name: Analog Link A4
+  type: other
+  description: Rear XLR3 Male
+- name: AES3 Input D1/2
+  type: other
+  description: Rear XLR3 Female
+- name: AES3 Input D3/4
+  type: other
+  description: Rear XLR3 Female
+- name: AES3 Link D1/2
+  type: other
+  description: Rear XLR3 Male
+- name: AES3 Link D3/4
+  type: other
+  description: Rear XLR3 Male
+- name: Speaker Output A
+  type: other
+  description: Rear speakON NL4
+- name: Speaker Output B
+  type: other
+  description: Rear speakON NL4
+- name: Speaker Output C
+  type: other
+  description: Rear speakON NL4
+- name: Speaker Output D
+  type: other
+  description: Rear speakON NL4
+- name: 4 Channel Output
+  type: other
+  description: Rear speakON NL8 - alternative to NL4 outputs
 - name: Ethernet 1
   type: 100base-tx
+  description: Rear etherCON
 - name: Ethernet 2
   type: 100base-tx
+  description: Rear etherCON
+- name: CAN 1
+  type: other
+  description: Rear RJ45 - CAN bus
+- name: CAN 2
+  type: other
+  description: Rear RJ45 - CAN bus

@@ -1,0 +1,36 @@
+manufacturer: d&b audiotechnik
+model: 5DM
+slug: db-audiotechnik-5dm
+u_height: 1
+is_full_depth: false
+description: Compact installation amplifier; 4 output channels, Milan and OCA/AES70;
+  half-width 1U chassis.
+interfaces:
+- name: Ethernet 1
+  type: 1000base-t
+  description: Rear RJ45
+- name: Ethernet 2
+  type: 1000base-t
+  description: Rear RJ45
+- name: Analog Input/Link A1/A2
+  type: other
+  description: Rear Euroblock 6-pin
+- name: Analog Input/Link A3/A4
+  type: other
+  description: Rear Euroblock 6-pin
+- name: GPI
+  type: other
+  description: Rear Euroblock 6-pin
+- name: FAULT
+  type: other
+  description: Rear Euroblock 3-pin
+- name: Speaker Output A/B
+  type: other
+  description: Rear Euroblock 4-pin
+- name: Speaker Output C/D
+  type: other
+  description: Rear Euroblock 4-pin
+power-ports:
+- name: Mains Input
+  type: iec-60320-c14
+  description: Rear mains inlet
