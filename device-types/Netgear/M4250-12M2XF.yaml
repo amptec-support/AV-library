@@ -1,0 +1,66 @@
+manufacturer: Netgear
+model: M4250-12M2XF
+slug: netgear-m4250-12m2xf
+part_number: MSM4214X
+u_height: 1
+is_full_depth: false
+description: NETGEAR AV Line M4250-12M2XF (MSM4214X). 2.5G LED tiles switch; no PoE. Network connectors physically on rear
+  in standard AV orientation; reversible rackmount.
+interfaces:
+- name: Port 1
+  type: 2.5gbase-t
+  description: Rear RJ45
+- name: Port 2
+  type: 2.5gbase-t
+  description: Rear RJ45
+- name: Port 3
+  type: 2.5gbase-t
+  description: Rear RJ45
+- name: Port 4
+  type: 2.5gbase-t
+  description: Rear RJ45
+- name: Port 5
+  type: 2.5gbase-t
+  description: Rear RJ45
+- name: Port 6
+  type: 2.5gbase-t
+  description: Rear RJ45
+- name: Port 7
+  type: 2.5gbase-t
+  description: Rear RJ45
+- name: Port 8
+  type: 2.5gbase-t
+  description: Rear RJ45
+- name: Port 9
+  type: 2.5gbase-t
+  description: Rear RJ45
+- name: Port 10
+  type: 2.5gbase-t
+  description: Rear RJ45
+- name: Port 11
+  type: 2.5gbase-t
+  description: Rear RJ45
+- name: Port 12
+  type: 2.5gbase-t
+  description: Rear RJ45
+- name: Port 13
+  type: 10gbase-x-sfpp
+  description: Rear SFP+
+- name: Port 14
+  type: 10gbase-x-sfpp
+  description: Rear SFP+
+- name: OOB Management
+  type: 1000base-t
+  mgmt_only: true
+  description: Rear RJ45
+console-ports:
+- name: RJ45 Console
+  type: rj-45
+  description: Rear RJ45
+- name: USB-C Console
+  type: usb-c
+  description: Rear USB-C
+power-ports:
+- name: Power In 1
+  type: iec-60320-c14
+  description: Rear IEC C14

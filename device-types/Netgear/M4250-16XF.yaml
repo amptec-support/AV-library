@@ -1,0 +1,72 @@
+manufacturer: Netgear
+model: M4250-16XF
+slug: netgear-m4250-16xf
+part_number: XSM4216F
+u_height: 1
+is_full_depth: false
+description: NETGEAR AV Line M4250-16XF (XSM4216F). 10G aggregation; ports 1-12 also support 1G auto-negotiation; ports 13-16
+  1G manual setting. Network connectors physically on rear in standard AV orientation; reversible rackmount.
+interfaces:
+- name: Port 1
+  type: 10gbase-x-sfpp
+  description: Rear SFP+
+- name: Port 2
+  type: 10gbase-x-sfpp
+  description: Rear SFP+
+- name: Port 3
+  type: 10gbase-x-sfpp
+  description: Rear SFP+
+- name: Port 4
+  type: 10gbase-x-sfpp
+  description: Rear SFP+
+- name: Port 5
+  type: 10gbase-x-sfpp
+  description: Rear SFP+
+- name: Port 6
+  type: 10gbase-x-sfpp
+  description: Rear SFP+
+- name: Port 7
+  type: 10gbase-x-sfpp
+  description: Rear SFP+
+- name: Port 8
+  type: 10gbase-x-sfpp
+  description: Rear SFP+
+- name: Port 9
+  type: 10gbase-x-sfpp
+  description: Rear SFP+
+- name: Port 10
+  type: 10gbase-x-sfpp
+  description: Rear SFP+
+- name: Port 11
+  type: 10gbase-x-sfpp
+  description: Rear SFP+
+- name: Port 12
+  type: 10gbase-x-sfpp
+  description: Rear SFP+
+- name: Port 13
+  type: 10gbase-x-sfpp
+  description: Rear SFP+
+- name: Port 14
+  type: 10gbase-x-sfpp
+  description: Rear SFP+
+- name: Port 15
+  type: 10gbase-x-sfpp
+  description: Rear SFP+
+- name: Port 16
+  type: 10gbase-x-sfpp
+  description: Rear SFP+
+- name: OOB Management
+  type: 1000base-t
+  mgmt_only: true
+  description: Rear RJ45
+console-ports:
+- name: RJ45 Console
+  type: rj-45
+  description: Rear RJ45
+- name: USB-C Console
+  type: usb-c
+  description: Rear USB-C
+power-ports:
+- name: Power In 1
+  type: iec-60320-c14
+  description: Rear IEC C14
