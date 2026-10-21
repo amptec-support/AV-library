@@ -53,3 +53,8 @@ interfaces:
 - name: Ethernet 2
   type: 100base-tx
   description: Rear RJ45
+
+power-ports:
+- name: Mains Input
+  type: neutrik-powercon-true1
+  description: Rear powerCON TRUE1
