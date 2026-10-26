@@ -1,0 +1,48 @@
+manufacturer: Beelink
+model: EQi13 (Intel Core i5-13500H)
+slug: beelink-eqi13-i5-13500h
+description: Compact mini PC with dual 1GbE, dual HDMI and integrated 85W AC PSU.
+comments: |-
+  Product: Beelink EQi13 (not EQi13 Pro), Intel Core i5-13500H.
+  User's configuration: 16GB RAM, 500GB SSD. RAM/SSD are instance specifications,
+  not separate Device Types because they do not change the external connectors.
+  Chassis: 126 x 126 x 44.2 mm; desktop/mini PC, not a native rackmount device.
+  Internal supply rated 85W; this rating is not a verified maximum AC input draw.
+  Source: https://www.bee-link.com/products/beelink-eqi13
+u_height: 0
+is_full_depth: false
+interfaces:
+  - name: LAN 1
+    type: 1000base-t
+    description: Rear RJ45
+  - name: LAN 2
+    type: 1000base-t
+    description: Rear RJ45
+  - name: HDMI 1
+    type: other
+    description: Rear HDMI output
+  - name: HDMI 2
+    type: other
+    description: Rear HDMI output
+  - name: USB-A Front
+    type: other
+    description: Front USB-A 3.2 Gen 2 (10Gbps)
+  - name: USB-C Front
+    type: other
+    description: Front USB-C 3.2 Gen 2 (10Gbps), data only
+  - name: USB-A Rear 1
+    type: other
+    description: Rear USB-A 3.2 Gen 2 (10Gbps)
+  - name: USB-A Rear 2
+    type: other
+    description: Rear USB-A 3.2 Gen 2 (10Gbps)
+  - name: USB-A Rear 3
+    type: other
+    description: Rear USB-A 2.0
+  - name: Audio 3.5mm
+    type: other
+    description: Front 3.5mm audio jack
+power-ports:
+  - name: Mains Input
+    type: iec-60320-c8
+    description: Rear IEC C8 (figure-eight); internal 85W PSU
