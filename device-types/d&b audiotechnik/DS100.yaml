@@ -1,0 +1,22 @@
+manufacturer: d&b audiotechnik
+model: DS100
+slug: db-audiotechnik-ds100
+part_number: Z4100
+u_height: 3
+is_full_depth: false
+description: Dante/AES67 Soundscape DSP processing engine; 2 Dante RJ45 ports and
+  1 control RJ45.
+interfaces:
+- name: Dante Primary
+  type: 1000base-t
+  description: Rear RJ45
+- name: Dante Secondary
+  type: 1000base-t
+  description: Rear RJ45
+- name: Control LAN
+  type: 1000base-t
+  description: Rear RJ45
+power-ports:
+- name: Mains Input
+  type: iec-60320-c14
+  description: Rear IEC C14

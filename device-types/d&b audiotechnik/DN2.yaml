@@ -1,0 +1,54 @@
+manufacturer: d&b audiotechnik
+model: DN2
+slug: db-audiotechnik-dn2
+part_number: Z4004
+u_height: 1
+is_full_depth: false
+description: 8-port Milan/AVB switch; 90 W PoE++ per port; four front and four rear
+  etherCON; half-width.
+interfaces:
+- name: ETH1
+  type: 1000base-t
+  description: Rear etherCON
+  poe_mode: pse
+  poe_type: type4-ieee802.3bt
+- name: ETH2
+  type: 1000base-t
+  description: Rear etherCON
+  poe_mode: pse
+  poe_type: type4-ieee802.3bt
+- name: ETH3
+  type: 1000base-t
+  description: Rear etherCON
+  poe_mode: pse
+  poe_type: type4-ieee802.3bt
+- name: ETH4
+  type: 1000base-t
+  description: Rear etherCON
+  poe_mode: pse
+  poe_type: type4-ieee802.3bt
+- name: ETH5
+  type: 1000base-t
+  description: Front etherCON
+  poe_mode: pse
+  poe_type: type4-ieee802.3bt
+- name: ETH6
+  type: 1000base-t
+  description: Front etherCON
+  poe_mode: pse
+  poe_type: type4-ieee802.3bt
+- name: ETH7
+  type: 1000base-t
+  description: Front etherCON
+  poe_mode: pse
+  poe_type: type4-ieee802.3bt
+- name: ETH8
+  type: 1000base-t
+  description: Front etherCON
+  poe_mode: pse
+  poe_type: type4-ieee802.3bt
+power-ports:
+- name: Mains Input
+  type: neutrik-powercon-true1
+  description: Rear powerCON TRUE1 TOP
+maximum_draw: 800

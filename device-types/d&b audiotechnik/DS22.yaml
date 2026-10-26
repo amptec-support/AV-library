@@ -1,0 +1,49 @@
+manufacturer: d&b audiotechnik
+model: DS22
+slug: db-audiotechnik-ds22
+part_number: Z4012
+u_height: 1
+is_full_depth: false
+description: Milan audio-input bridge; 5 etherCON ports, 8 XLR AES3 physical sockets,
+  four front sockets selectable analog/AES3.
+interfaces:
+- name: ETH1
+  type: 1000base-t
+  description: Front etherCON
+- name: ETH2
+  type: 1000base-t
+  description: Front etherCON
+- name: ETH3
+  type: 1000base-t
+  description: Front etherCON
+- name: ETH4
+  type: 1000base-t
+  description: Front etherCON
+- name: ETH5
+  type: 1000base-t
+  description: Rear etherCON
+- name: Input 1 (Analog / AES3)
+  type: other
+  description: Front XLR3 Female - switchable analog/AES3
+- name: Input 2 (Analog / AES3)
+  type: other
+  description: Front XLR3 Female - switchable analog/AES3
+- name: Input 3 (Analog / AES3)
+  type: other
+  description: Front XLR3 Female - switchable analog/AES3
+- name: Input 4 (Analog / AES3)
+  type: other
+  description: Front XLR3 Female - switchable analog/AES3
+- name: AES3 Input D9/10
+  type: other
+  description: Rear XLR3 Female - AES3
+- name: AES3 Input D11/12
+  type: other
+  description: Rear XLR3 Female - AES3
+- name: AES3 Input D13/14
+  type: other
+  description: Rear XLR3 Female - AES3
+- name: AES3 Input D15/16
+  type: other
+  description: Rear XLR3 Female - AES3
+maximum_draw: 13

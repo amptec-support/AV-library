@@ -1,0 +1,55 @@
+manufacturer: d&b audiotechnik
+model: DS110
+slug: db-audiotechnik-ds110
+part_number: Z4103
+u_height: 3
+is_full_depth: false
+description: Dante/MADI Soundscape DSP processing engine; dual Dante, dual control
+  and physical MADI/word-clock connectivity.
+interfaces:
+- name: Dante Primary
+  type: 1000base-t
+  description: Rear RJ45
+- name: Dante Secondary
+  type: 1000base-t
+  description: Rear RJ45
+- name: Control LAN 1
+  type: 1000base-t
+  description: Rear RJ45
+- name: Control LAN 2
+  type: 1000base-t
+  description: Rear RJ45
+- name: MADI Input 1
+  type: other
+  description: Rear BNC - MADI
+- name: MADI Input 2
+  type: other
+  description: Rear BNC - MADI
+- name: MADI Input 3
+  type: other
+  description: Rear BNC - MADI
+- name: MADI Input 4
+  type: other
+  description: Rear BNC - MADI
+- name: MADI Output 1
+  type: other
+  description: Rear BNC - MADI
+- name: MADI Output 2
+  type: other
+  description: Rear BNC - MADI
+- name: MADI Output 3
+  type: other
+  description: Rear BNC - MADI
+- name: MADI Output 4
+  type: other
+  description: Rear BNC - MADI
+- name: Word Clock Input
+  type: other
+  description: Rear BNC - Word Clock (verify connector)
+- name: Word Clock Output
+  type: other
+  description: Rear BNC - Word Clock (verify connector)
+power-ports:
+- name: Mains Input
+  type: iec-60320-c14
+  description: Rear IEC C14

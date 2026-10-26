@@ -1,0 +1,50 @@
+manufacturer: d&b audiotechnik
+model: DN1
+slug: db-audiotechnik-dn1
+part_number: Z4002
+u_height: 1
+is_full_depth: false
+description: 11-port Milan/AVB Ethernet switch; 3 front etherCON, 8 rear RJ45; 2 PoE
+  outputs; half-width.
+interfaces:
+- name: ETH1
+  type: 1000base-t
+  description: Front etherCON
+  poe_mode: pse
+  poe_type: type1-ieee802.3af
+- name: ETH2
+  type: 1000base-t
+  description: Front etherCON
+  poe_mode: pse
+  poe_type: type1-ieee802.3af
+- name: ETH3
+  type: 1000base-t
+  description: Front etherCON
+- name: ETH4
+  type: 1000base-t
+  description: Rear etherCON
+- name: ETH5
+  type: 1000base-t
+  description: Rear etherCON
+- name: ETH6
+  type: 1000base-t
+  description: Rear etherCON
+- name: ETH7
+  type: 1000base-t
+  description: Rear etherCON
+- name: ETH8
+  type: 1000base-t
+  description: Rear etherCON
+- name: ETH9
+  type: 1000base-t
+  description: Rear etherCON
+- name: ETH10
+  type: 1000base-t
+  description: Rear etherCON
+- name: ETH11
+  type: 1000base-t
+  description: Rear etherCON
+power-ports:
+- name: Mains Input
+  type: neutrik-powercon-true1
+  description: Rear powerCON TRUE1 TOP

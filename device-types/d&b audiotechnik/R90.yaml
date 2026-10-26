@@ -1,0 +1,17 @@
+manufacturer: d&b audiotechnik
+model: R90
+slug: db-audiotechnik-r90
+u_height: 0
+is_full_depth: false
+description: 7-inch network touch panel; 10/100 Ethernet, two USB ports and external
+  24 V DC supply.
+interfaces:
+- name: LAN1
+  type: 100base-tx
+  description: Rear RJ45
+- name: USB 1
+  type: other
+  description: Rear USB 2.0
+- name: USB 2
+  type: other
+  description: Rear USB 2.0

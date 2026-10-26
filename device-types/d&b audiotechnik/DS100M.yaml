@@ -1,0 +1,37 @@
+manufacturer: d&b audiotechnik
+model: DS100M
+slug: db-audiotechnik-ds100m
+part_number: Z4102
+u_height: 3
+is_full_depth: false
+description: Milan/MADI Soundscape DSP processing engine; network connections and
+  dedicated MADI functionality.
+interfaces:
+- name: Milan Primary
+  type: 1000base-t
+  description: Rear RJ45
+- name: Milan Secondary
+  type: 1000base-t
+  description: Rear RJ45
+- name: Control LAN 1
+  type: 1000base-t
+  description: Rear RJ45
+- name: USB 1
+  type: other
+  description: Rear USB - USB subtype requires panel verification
+- name: USB 2
+  type: other
+  description: Rear USB - USB subtype requires panel verification
+- name: MADI BNC 1
+  type: other
+  description: Rear BNC - MADI (direction to verify)
+- name: MADI BNC 2
+  type: other
+  description: Rear BNC - MADI (direction to verify)
+- name: MADI BNC 3
+  type: other
+  description: Rear BNC - MADI (direction to verify)
+power-ports:
+- name: Mains Input
+  type: iec-60320-c14
+  description: Rear IEC C14

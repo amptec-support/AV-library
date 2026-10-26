@@ -1,0 +1,58 @@
+manufacturer: d&b audiotechnik
+model: DS10
+slug: db-audiotechnik-ds10
+part_number: Z4010
+u_height: 1
+is_full_depth: false
+description: Dante/AES67 to AES3 network bridge; 5-port Ethernet switch, 2 AES3 XLR
+  inputs and 8 AES3 XLR outputs.
+interfaces:
+- name: ETH1
+  type: 1000base-t
+  description: Front etherCON
+- name: ETH2
+  type: 1000base-t
+  description: Front etherCON
+- name: ETH3
+  type: 1000base-t
+  description: Front etherCON
+- name: ETH4
+  type: 1000base-t
+  description: Front etherCON
+- name: ETH5
+  type: 1000base-t
+  description: Rear etherCON
+- name: AES3 Input D1/2
+  type: other
+  description: Front XLR3 Female - AES3
+- name: AES3 Input D3/4
+  type: other
+  description: Front XLR3 Female - AES3
+- name: AES3 Output D1/2
+  type: other
+  description: Front XLR3 Male - AES3
+- name: AES3 Output D3/4
+  type: other
+  description: Front XLR3 Male - AES3
+- name: AES3 Output D5/6
+  type: other
+  description: Front XLR3 Male - AES3
+- name: AES3 Output D7/8
+  type: other
+  description: Front XLR3 Male - AES3
+- name: AES3 Output D9/10
+  type: other
+  description: Front XLR3 Male - AES3
+- name: AES3 Output D11/12
+  type: other
+  description: Front XLR3 Male - AES3
+- name: AES3 Output D13/14
+  type: other
+  description: Front XLR3 Male - AES3
+- name: AES3 Output D15/16
+  type: other
+  description: Front XLR3 Male - AES3
+power-ports:
+- name: Mains Input
+  type: neutrik-powercon-true1
+  description: Rear powerCON TRUE1
